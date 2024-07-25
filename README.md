@@ -81,24 +81,3 @@ This project is a simple chatbot application that integrates speech recognition 
 2. Click the "Start" button to begin speech recognition.
 3. Speak into your microphone to send a transcript to the server.
 4. The AI response will be displayed on the screen and read aloud.
-
-## Troubleshooting
-
-- **Selected voice not found**: Check available voices in the browser and update the voice selection in `chatbot.js`.
-- **500 Internal Server Error**: Check PHP error logs and ensure database credentials are correct.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify the sections based on your project’s specifics and any additional instructions or information you'd like to include.
