@@ -35,25 +35,19 @@ This project is a simple chatbot application that integrates speech recognition 
 
 ### Setup
 
-1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/yourusername/chatbot-project.git
-   cd chatbot-project
-   ```
-
-2. **Install Node.js Dependencies**
+1. **Install Node.js Dependencies**
 
    ```bash
    npm install
    ```
 
-3. **Configure the PHP Script**
+2. **Configure the PHP Script**
 
    - Update `chatbot.php` with your MySQL database credentials.
    - Ensure that `chatbot.php` is accessible from your Node.js server.
 
-4. **Create Database and Tables**
+3. **Create Database and Tables**
 
    - Import the SQL schema for creating the `transcripts` and `chatbotai` tables.
 
@@ -71,13 +65,13 @@ This project is a simple chatbot application that integrates speech recognition 
    );
    ```
 
-5. **Run the Node.js Server**
+4. **Run the Node.js Server**
 
    ```bash
    node server.js
    ```
 
-6. **Start the PHP Server**
+5. **Start the PHP Server**
 
    Ensure your PHP server is running (e.g., XAMPP or similar).
 
