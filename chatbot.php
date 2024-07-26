@@ -7,10 +7,10 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$servername = "localhost";
-$username = "test";
-$password = "test";
-$dbname = "robot";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -77,7 +77,6 @@ CREATE TABLE chatbotAi (
     response TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
 
 CREATE TABLE chatbotUser (
     id INT AUTO_INCREMENT PRIMARY KEY,
