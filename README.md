@@ -24,7 +24,7 @@ This project is a simple chatbot application that integrates speech recognition 
    - `chatbot.php`: PHP script that handles storing transcripts and AI responses in a MySQL database.
 
 3. **Database**
-   - MySQL database with two tables: `transcripts` for storing user transcripts and `chatbotai` for storing AI responses.
+   - MySQL database with two tables: `chatbotUser` for storing user transcripts and `chatbotAi` for storing AI responses.
 
 ## Installation
 
@@ -52,7 +52,7 @@ This project is a simple chatbot application that integrates speech recognition 
 
    - Import the SQL schema for creating the `chatbotUser` and `chatbotAi` tables.
 
-   ```sql
+   ```ruby
 CREATE TABLE chatbotAi (
     id INT AUTO_INCREMENT PRIMARY KEY,
     response TEXT NOT NULL,
