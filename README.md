@@ -52,23 +52,22 @@ This project is a simple chatbot application that integrates speech recognition 
 
    - Import the SQL schema for creating the `chatbotUser` and `chatbotAi` tables.
 
-   ```ruby
+```ruby
 CREATE TABLE chatbotAi (
     id INT AUTO_INCREMENT PRIMARY KEY,
     response TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
 CREATE TABLE chatbotUser (
     id INT AUTO_INCREMENT PRIMARY KEY,
     text TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-   ```
+```
 
 4. **Run the Node.js Server**
 
-   ```bash
+   ```ruby
    node server.js
    ```
 
