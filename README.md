@@ -8,9 +8,13 @@ AIChatVoice is a chatbot application that integrates speech recognition and synt
 
 ## Features
 **Speech Recognition**: Converts spoken input into text.
+
 **Speech Synthesis**: Reads out AI responses in the chosen language.
+
 **Language Selection**: Allows users to choose between English and Arabic.
+
 **Database Integration**: Saves user transcripts and AI responses in a MySQL database.
+
 **Web Interface**: Provides an intuitive user interface for chatbot interaction.
 
 ## Components
