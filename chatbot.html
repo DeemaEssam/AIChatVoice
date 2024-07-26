@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fcd6e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .box {
+            position: relative;
+            width: 80vw;
+            height: 90vh;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #ff82b5;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .circle {
+            position: absolute;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .circle.one {
+            right: 48px;
+        }
+
+        .circle.two {
+            right: 28px;
+        }
+
+        .circle.three {
+            right: 8px;
+        }
+
+        .message-boxUser,
+        .message-boxAi {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Courier New', monospace;
+            text-align: justify;
+            width: 200px;
+        }
+
+        .message-boxUser {
+            border: 1px solid #ff69b4;
+            background-color: #ffe6e6;
+            float: left;
+            margin-left: 20px;
+            color: #ff1493;
+        }
+
+        .message-boxAi {
+            border: 1px solid #ff69b4;
+            background-color: #efd6d6;
+            float: right;
+            margin-right: 20px;
+            color: #ff1493;
+        }
+
+        button,
+        select {
+            width: 37vw;
+            padding: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff82b5;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 5px #ff82b5;
+        }
+
+        button:active {
+            transform: translateY(4px);
+            box-shadow: 0 1px #cc3366;
+        }
+
+        button:hover {
+            background-color: #f37bab;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div><br><br><br>
+    
+        <select id="languageSelect">
+            <option value="en-US">English</option>
+            <option value="ar-SA">Arabic</option>
+        </select>
+    
+        <button class="content" id="startButton">Start</button>
+        <div id="output" class="message-boxUser"></div><br><br><br><br>
+        <div id="aiResponse" class="message-boxAi"></div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
