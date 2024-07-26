@@ -1,6 +1,6 @@
 # AIChatVoice
 
-https://github.com/user-attachments/assets/34f47416-e02c-463e-886e-a29a662afac4
+https://github.com/user-attachments/assets/735c71d4-5994-4fee-a41a-da54d20be8f7
 
 ## Overview
 
