@@ -4,14 +4,14 @@ https://github.com/user-attachments/assets/bbbad12f-2184-4fd5-becb-8aa6fae97876
 
 ## Overview
 
-This project is a simple chatbot application that integrates speech recognition and synthesis with a web-based interface. It uses Node.js, Express, and OpenAI API for processing user inputs and generating responses. The backend is connected to a PHP script for storing transcripts and AI responses in a MySQL database.
+AIChatVoice is a chatbot application that integrates speech recognition and synthesis with a web-based interface. Built with Node.js, Express, and the OpenAI API, this project provides an interactive experience by converting spoken language into text and delivering vocal responses. The application includes a feature to choose between English and Arabic languages and records user transcripts and AI responses in a MySQL database through a PHP script.
 
 ## Features
-
-- **Speech Recognition**: Converts spoken language into text.
-- **Speech Synthesis**: Reads out the AI responses using speech synthesis.
-- **Database Integration**: Saves transcripts and AI responses to a MySQL database.
-- **Web Interface**: Provides a user-friendly interface to interact with the chatbot.
+**Speech Recognition**: Converts spoken input into text.
+**Speech Synthesis**: Reads out AI responses in the chosen language.
+**Language Selection**: Allows users to choose between English and Arabic.
+**Database Integration**: Saves user transcripts and AI responses in a MySQL database.
+**Web Interface**: Provides an intuitive user interface for chatbot interaction.
 
 ## Components
 
