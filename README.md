@@ -50,20 +50,20 @@ This project is a simple chatbot application that integrates speech recognition 
 
 3. **Create Database and Tables**
 
-   - Import the SQL schema for creating the `transcripts` and `chatbotai` tables.
+   - Import the SQL schema for creating the `chatbotUser` and `chatbotAi` tables.
 
    ```sql
-   CREATE TABLE transcripts (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       text TEXT NOT NULL,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
+CREATE TABLE chatbotAi (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    response TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-   CREATE TABLE chatbotai (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       response TEXT NOT NULL,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
+CREATE TABLE chatbotUser (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    text TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
    ```
 
 4. **Run the Node.js Server**
